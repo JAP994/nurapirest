@@ -14,7 +14,7 @@ class UnoAMuchosMaintenancesDonationsToDonationsTable extends Migration
     public function up()
     {
         Schema::table('donations', function (Blueprint $table) {
-            $table->bigInteger('maintenance_id');
+            $table->bigInteger('maintenance_id')->nullable();
             $table->foreign('maintenance_id')->references('id')->on('maintenances')
             ->onDelete('cascade')
             ->onUpdate('cascade');

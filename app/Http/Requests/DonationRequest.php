@@ -29,9 +29,9 @@ class DonationRequest extends FormRequest
             'collected' => 'required',
             'image' => 'required',
             'description' => 'required',
-            'delivery_id' => 'required',
-            'maintenance_id' => 'required',
-            'collected_id' => 'required',
+            'delivery_id' => '',
+            'maintenance_id' => '',
+            'collected_id' => '',
             'donor_id' =>'required',
         ];
     }
